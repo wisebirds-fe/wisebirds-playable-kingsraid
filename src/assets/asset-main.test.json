@@ -1,0 +1,41 @@
+{
+  "bg": {
+    "data": "./images/bg.jpg"
+  },
+  "logoVespa": {
+    "data": "./images/logo_Vespa.png"
+  },
+  "logoKingsRaid": {
+    "data": "./images/logo_KingsRaid.png"
+  },
+  "title": {
+    "data": "./images/title_01.png"
+  },
+  "btnMainCrow": {
+    "data": "./images/btn_main_Crow.png"
+  },
+  "btnMainAselica": {
+    "data": "./images/btn_main_Aselica.png"
+  },
+  "btnMainScarlet": {
+    "data": "./images/btn_main_Scarlet.png"
+  },
+  "btnCharPrev": {
+    "data": "./images/btn_char_prev.png"
+  },
+  "btnCharNext": {
+    "data": "./images/btn_char_next.png"
+  },
+  "btnVideo": {
+    "data": "./images/btn_video.png"
+  },
+  "videoAselica": {
+    "data": ""
+  },
+  "videoCrow": {
+    "data": "./videos/Crow.mp4"
+  },
+  "videoScarlet": {
+    "data": "./videos/Scarlet.mp4"
+  }
+}

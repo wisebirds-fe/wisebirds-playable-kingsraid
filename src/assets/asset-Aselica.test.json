@@ -1,0 +1,29 @@
+{
+  "image1": {
+    "data": "./images/Aselica/Aselica_01.png"
+  },
+  "image2": {
+    "data": "./images/Aselica/Aselica_02.png"
+  },
+  "image3": {
+    "data": "./images/Aselica/Aselica_03.png"
+  },
+  "title1": {
+    "data": "./images/Aselica/Aselica_title_01.png"
+  },
+  "title2": {
+    "data": "./images/Aselica/Aselica_title_02.png"
+  },
+  "title3": {
+    "data": "./images/Aselica/Aselica_title_03.png"
+  },
+  "btnCharType1": {
+    "data": "./images/Aselica/Aselica_btn_01.png"
+  },
+  "btnCharType2": {
+    "data": "./images/Aselica/Aselica_btn_02.png"
+  },
+  "btnCharType3": {
+    "data": "./images/Aselica/Aselica_btn_03.png"
+  }
+}

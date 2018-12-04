@@ -1,0 +1,29 @@
+{
+  "image1": {
+    "data": "./images/Crow/Crow_01.png"
+  },
+  "image2": {
+    "data": "./images/Crow/Crow_02.png"
+  },
+  "image3": {
+    "data": "./images/Crow/Crow_03.png"
+  },
+  "title1": {
+    "data": "./images/Crow/Crow_title_01.png"
+  },
+  "title2": {
+    "data": "./images/Crow/Crow_title_02.png"
+  },
+  "title3": {
+    "data": "./images/Crow/Crow_title_03.png"
+  },
+  "btnCharType1": {
+    "data": "./images/Crow/Crow_btn_01.png"
+  },
+  "btnCharType2": {
+    "data": "./images/Crow/Crow_btn_02.png"
+  },
+  "btnCharType3": {
+    "data": "./images/Crow/Crow_btn_03.png"
+  }
+}
