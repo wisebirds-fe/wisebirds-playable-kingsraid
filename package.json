@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "mornya",
   "private": true,
-  "homepage": "https://mornya.com/kingsraid2",
+  "homepage": "https://mornya.com/kingsraid",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
@@ -18,7 +18,7 @@
     "eject": "react-scripts eject"
   },
   "browserslist": [
-    ">0.2%",
+    ">1%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"

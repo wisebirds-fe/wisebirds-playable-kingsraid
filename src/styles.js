@@ -1,15 +1,15 @@
 import * as Helpers from './helpers';
 
 /*=== 테스트용 (raw image asset) ===*/
-import assetMain from './assets/asset-main.test.json';
-//import assetAselica from './assets/asset-Aselica.test.json';
-import assetCrow from './assets/asset-Crow.test.json';
-import assetScarlet from './assets/asset-Scarlet.test.json';
+//import assetMain from './assets/asset-main.test.json';
+////import assetAselica from './assets/asset-Aselica.test.json';
+//import assetCrow from './assets/asset-Crow.test.json';
+//import assetScarlet from './assets/asset-Scarlet.test.json';
 /*=== 배포용 (imported binary image assets) ===*/
-//import assetMain from './assets/asset-main.json';
+import assetMain from './assets/asset-main.json';
 //import assetAselica from './assets/asset-Aselica.json';
-//import assetCrow from './assets/asset-Crow.json';
-//import assetScarlet from './assets/asset-Scarlet.json';
+import assetCrow from './assets/asset-Crow.json';
+import assetScarlet from './assets/asset-Scarlet.json';
 
 const styles = {
   // App.js
@@ -117,7 +117,7 @@ const styles = {
     border: 0,
     fontSize: 0,
   },
-  btnMainAselica: {
+  /*btnMainAselica: {
     position: 'absolute',
     top: '20vh',
     left: '50%',
@@ -130,7 +130,7 @@ const styles = {
     backgroundColor: 'transparent',
     border: 0,
     fontSize: 0,
-  },
+  },*/
   btnMainScarlet: {
     position: 'absolute',
     top: '20vh',

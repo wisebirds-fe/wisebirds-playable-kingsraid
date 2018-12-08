@@ -59,7 +59,7 @@ class CharacterScarlet extends Component {
             type="button"
             style={{
               ...styles.btnCharScarlet1,
-              filter: this.state.type === 1 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 1 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(1)}
           >
@@ -70,7 +70,7 @@ class CharacterScarlet extends Component {
             type="button"
             style={{
               ...styles.btnCharScarlet2,
-              filter: this.state.type === 2 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 2 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(2)}
           >
@@ -81,7 +81,7 @@ class CharacterScarlet extends Component {
             type="button"
             style={{
               ...styles.btnCharScarlet3,
-              filter: this.state.type === 3 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 3 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(3)}
           >

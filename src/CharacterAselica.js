@@ -59,7 +59,7 @@ class CharacterAselica extends Component {
             type="button"
             style={{
               ...styles.btnCharAselica1,
-              filter: this.state.type === 1 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 1 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(1)}
           >
@@ -70,7 +70,7 @@ class CharacterAselica extends Component {
             type="button"
             style={{
               ...styles.btnCharAselica2,
-              filter: this.state.type === 2 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 2 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(2)}
           >
@@ -81,7 +81,7 @@ class CharacterAselica extends Component {
             type="button"
             style={{
               ...styles.btnCharAselica3,
-              filter: this.state.type === 3 ? 'grayscale(0%)' : 'grayscale(100%)'
+              filter: `grayscale(${this.state.type === 3 ? '0' : '100'}%)`
             }}
             onClick={this.onClickType(3)}
           >

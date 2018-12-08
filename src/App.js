@@ -29,9 +29,9 @@ class App extends Component {
 
     setTimeout(() => {
       if (isAOS) {
-        window.location.href = '//play.google.com/store/apps/details?id=com.vespainteractive.KingsRaid';
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.vespainteractive.KingsRaid';
       } else {
-        window.location.href = '//itunes.apple.com/kr/app/%ED%82%B9%EC%8A%A4%EB%A0%88%EC%9D%B4%EB%93%9C/id1097735195?mt=8';
+        window.location.href = 'https://itunes.apple.com/kr/app/%ED%82%B9%EC%8A%A4%EB%A0%88%EC%9D%B4%EB%93%9C/id1097735195?mt=8';
       }
     }, 500);
   };

@@ -16,11 +16,11 @@ export function freezeBody () {
   const windowScrollTop = getScrollOffsetY()
   document.body.style.marginLeft = `${-windowScrollLeft}px`
   document.body.style.marginTop = `${-windowScrollTop}px`
-  if (document.body.classList) {
-    document.body.classList.add('__ui-frozen-body__')
-  } else {
+  //if (document.body.classList) {
+  //  document.body.classList.add('__ui-frozen-body__')
+  //} else {
     document.body.className += '__ui-frozen-body__'
-  }
+  //}
 }
 
 /**
@@ -31,10 +31,10 @@ export function unfreezeBody () {
   const windowScrollTop = Math.abs(parseInt(document.body.style.marginTop, 10))
   document.body.style.marginLeft = ''
   document.body.style.marginTop = ''
-  if (document.body.classList) {
-    document.body.classList.remove('__ui-frozen-body__')
-  } else {
+  //if (document.body.classList) {
+  //  document.body.classList.remove('__ui-frozen-body__')
+  //} else {
     document.body.className -= '__ui-frozen-body__'
-  }
+  //}
   window.scrollTo(windowScrollLeft, windowScrollTop)
 }
