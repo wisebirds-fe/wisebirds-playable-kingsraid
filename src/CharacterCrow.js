@@ -5,25 +5,8 @@ class CharacterCrow extends Component {
   state = {
     type: 1,
   };
-  refChar1 = null;
-  refChar2 = null;
-  refChar3 = null;
 
-  onClickType = (type) => (e) => {
-    e.preventDefault();
-    this.onMouseHover(this[`refChar${type}`], true);
-    this.setState({ type });
-  };
-
-  onMouseHover = (ref, isHover) => () => {
-    if (ref) {
-      ref.style.filter = isHover ? 'grayscale(0%)' : 'grayscale(100%)';
-    }
-  };
-
-  componentDidMount() {
-    this.onClickType(this.state.type);
-  }
+  onClickType = (type) => () => this.setState({ type });
 
   render() {
     return (
@@ -55,34 +38,22 @@ class CharacterCrow extends Component {
 
         <div style={styles.wrapperBtnChar}>
           <button
-            ref={ref => this.refChar1 = ref}
             type="button"
-            style={{
-              ...styles.btnCharCrow1,
-              filter: `grayscale(${this.state.type === 1 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharCrow1, filter: this.state.type === 1 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(1)}
           >
             크로우 기본 (5성) 선택하기
           </button>
           <button
-            ref={ref => this.refChar2 = ref}
             type="button"
-            style={{
-              ...styles.btnCharCrow2,
-              filter: `grayscale(${this.state.type === 2 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharCrow2, filter: this.state.type === 2 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(2)}
           >
             아름다웠던 기억 크로우 선택하기
           </button>
           <button
-            ref={ref => this.refChar3 = ref}
             type="button"
-            style={{
-              ...styles.btnCharCrow3,
-              filter: `grayscale(${this.state.type === 3 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharCrow3, filter: this.state.type === 3 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(3)}
           >
             해변가의 크로우 선택하기

@@ -5,25 +5,8 @@ class CharacterScarlet extends Component {
   state = {
     type: 1,
   };
-  refChar1 = null;
-  refChar2 = null;
-  refChar3 = null;
 
-  onClickType = (type) => (e) => {
-    e.preventDefault();
-    this.onMouseHover(this[`refChar${type}`], true);
-    this.setState({ type });
-  };
-
-  onMouseHover = (ref, isHover) => () => {
-    if (ref) {
-      ref.style.filter = isHover ? 'grayscale(0%)' : 'grayscale(100%)';
-    }
-  };
-
-  componentDidMount() {
-    this.onClickType(this.state.type);
-  }
+  onClickType = (type) => () => this.setState({ type });
 
   render() {
     return (
@@ -55,34 +38,22 @@ class CharacterScarlet extends Component {
 
         <div style={styles.wrapperBtnChar}>
           <button
-            ref={ref => this.refChar1 = ref}
             type="button"
-            style={{
-              ...styles.btnCharScarlet1,
-              filter: `grayscale(${this.state.type === 1 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharScarlet1, filter: this.state.type === 1 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(1)}
           >
             스칼렛 기본 (5성) 선택하기
           </button>
           <button
-            ref={ref => this.refChar2 = ref}
             type="button"
-            style={{
-              ...styles.btnCharScarlet2,
-              filter: `grayscale(${this.state.type === 2 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharScarlet2, filter: this.state.type === 2 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(2)}
           >
             얼음공주 스칼렛 선택하기
           </button>
           <button
-            ref={ref => this.refChar3 = ref}
             type="button"
-            style={{
-              ...styles.btnCharScarlet3,
-              filter: `grayscale(${this.state.type === 3 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharScarlet3, filter: this.state.type === 3 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(3)}
           >
             백은의 행진곡 스칼렛 선택하기

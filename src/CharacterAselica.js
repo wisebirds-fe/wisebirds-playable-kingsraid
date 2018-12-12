@@ -5,25 +5,8 @@ class CharacterAselica extends Component {
   state = {
     type: 1,
   };
-  refChar1 = null;
-  refChar2 = null;
-  refChar3 = null;
 
-  onClickType = (type) => (e) => {
-    e.preventDefault();
-    this.onMouseHover(this[`refChar${type}`], true);
-    this.setState({ type });
-  };
-
-  onMouseHover = (ref, isHover) => () => {
-    if (ref) {
-      ref.style.filter = isHover ? 'grayscale(0%)' : 'grayscale(100%)';
-    }
-  };
-
-  componentDidMount() {
-    this.onClickType(this.state.type);
-  }
+  onClickType = (type) => () => this.setState({ type });
 
   render() {
     return (
@@ -55,34 +38,22 @@ class CharacterAselica extends Component {
 
         <div style={styles.wrapperBtnChar}>
           <button
-            ref={ref => this.refChar1 = ref}
             type="button"
-            style={{
-              ...styles.btnCharAselica1,
-              filter: `grayscale(${this.state.type === 1 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharAselica1, filter: this.state.type === 1 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(1)}
           >
             아셀리카 기본 (5성) 선택하기
           </button>
           <button
-            ref={ref => this.refChar2 = ref}
             type="button"
-            style={{
-              ...styles.btnCharAselica2,
-              filter: `grayscale(${this.state.type === 2 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharAselica2, filter: this.state.type === 2 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(2)}
           >
             타천사 아셀리카 선택하기
           </button>
           <button
-            ref={ref => this.refChar3 = ref}
             type="button"
-            style={{
-              ...styles.btnCharAselica3,
-              filter: `grayscale(${this.state.type === 3 ? '0' : '100'}%)`
-            }}
+            style={{ ...styles.btnCharAselica3, filter: this.state.type === 3 ? null : 'grayscale(100%)' }}
             onClick={this.onClickType(3)}
           >
             성스러운 언약 아셀리카 선택하기
