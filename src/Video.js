@@ -7,6 +7,7 @@ class Video extends Component {
   componentDidMount() {
     this.refVideo.volume = 1;
     this.refVideo.addEventListener('ended', this.onFinishVideo);
+    this.refVideo.play()
   }
 
   componentWillUnmount() {
@@ -34,8 +35,8 @@ class Video extends Component {
   render() {
     return (
       <div style={styles.videoWrapper}>
-        <video ref={this.getRef} style={styles.video} autoPlay>
-          <source src={this.characterVideoSource()}/>
+        <video ref={this.getRef} style={styles.video}>
+          <source type="video/mp4" src={this.characterVideoSource()}/>
         </video>
       </div>
     );
